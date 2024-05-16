@@ -28,7 +28,6 @@ public class GameManagerScript : MonoBehaviour
             bool success = MoveNumber(2, moveTo, moveTo + velocity);
 
             if (!success)
-            {
                 return false;
             }
         }   // ƒvƒŒƒCƒ„[‚ÌˆÚ“®æ‚É” ‚ª‚¢‚½ê‡‚Ìˆ—
@@ -62,8 +61,6 @@ public class GameManagerScript : MonoBehaviour
             {
                 debugText += map[y, x].ToString() + ",";
             }
-
-            debugText += "\n";
         }
 
         Debug.Log(debugText);
