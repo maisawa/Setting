@@ -68,9 +68,7 @@ public class GameManagerScript : MonoBehaviour
         // プレイヤー・箱の共通処理
         field[moveTo.y, moveTo.x] = field[moveFrom.y, moveFrom.x];
         field[moveFrom.y, moveFrom.x] = null;
-        // オブジェクトのシーン上の座標を動かす
-        //field[moveTo.y, moveTo.x].transform.position =
-        //    new Vector3(moveTo.x, -1 * moveTo.y, 0);
+
         // プレイヤーor箱のオブジェクトから、Moveコンポーネントをとってくる
         Move move = field[moveTo.y, moveTo.x].GetComponent<Move>();
         // Moveコンポーネントに対して、動けと命令する
