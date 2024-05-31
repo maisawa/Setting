@@ -1,10 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-/// <summary>
-/// オブジェクトを滑らかに動かす機能を提供する
-/// </summary>
 public class Move : MonoBehaviour
 {
     /// <summary>移動までにかかる時間（秒）</summary>
@@ -29,11 +25,6 @@ public class Move : MonoBehaviour
 
         elapsedTime += Time.deltaTime;
         float timeRatio = elapsedTime / duration;
-
-        //if (timeRatio > 1)
-        //{
-        //    timeRatio = 1;
-        //}
 
         float easing = timeRatio;
 
