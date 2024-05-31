@@ -6,9 +6,7 @@ public class GameManagerScript : MonoBehaviour
 {
     public GameObject playerPrefab;
     public GameObject boxPrefab;
-    /// <summary>荷物を格納する場所のプレハブ</summary>
     public GameObject storePrefab;
-    /// <summary>クリアーしたことを示すテキストの GameObject</summary>
     public GameObject clearText;
     int[,] map; // マップの元データ（数字）
     GameObject[,] field;    // map を元にしたオブジェクトの格納庫
@@ -80,12 +78,6 @@ public class GameManagerScript : MonoBehaviour
 
         return true;
     }
-
-    /// <summary>
-    /// プレイヤーの座標を調べて取得する
-    /// ※）GetPlayerPosition 
-    /// </summary>
-    /// <returns>プレイヤーの座標</returns>
     Vector2Int GetPlayerIndex()
     {
         for (int y = 0; y < field.GetLength(0); y++)
